@@ -21,6 +21,7 @@
 		78AFC91B19C91EC300349C8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AFC8FD19C91EC300349C8F /* UIKit.framework */; };
 		78AFC92319C91EC300349C8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78AFC92119C91EC300349C8F /* InfoPlist.strings */; };
 		78AFC92519C91EC300349C8F /* SingletonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AFC92419C91EC300349C8F /* SingletonTests.m */; };
+		78AFC93219C91F6500349C8F /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AFC93119C91F6500349C8F /* Singleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		78AFC92019C91EC300349C8F /* SingletonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingletonTests-Info.plist"; sourceTree = "<group>"; };
 		78AFC92219C91EC300349C8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		78AFC92419C91EC300349C8F /* SingletonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonTests.m; sourceTree = "<group>"; };
+		78AFC93019C91F6500349C8F /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		78AFC93119C91F6500349C8F /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,11 @@
 		78AFC8FF19C91EC300349C8F /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
-				78AFC90819C91EC300349C8F /* AppDelegate.h */,
-				78AFC90919C91EC300349C8F /* AppDelegate.m */,
+				78AFC93019C91F6500349C8F /* Singleton.h */,
+				78AFC93119C91F6500349C8F /* Singleton.m */,
+				78AFC92F19C91F3B00349C8F /* viewControllers */,
+				78AFC92E19C91F3100349C8F /* appDelegate */,
 				78AFC90B19C91EC300349C8F /* Main.storyboard */,
-				78AFC90E19C91EC300349C8F /* ViewController.h */,
-				78AFC90F19C91EC300349C8F /* ViewController.m */,
 				78AFC91119C91EC300349C8F /* Images.xcassets */,
 				78AFC90019C91EC300349C8F /* Supporting Files */,
 			);
@@ -150,6 +153,24 @@
 				78AFC92119C91EC300349C8F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78AFC92E19C91F3100349C8F /* appDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				78AFC90819C91EC300349C8F /* AppDelegate.h */,
+				78AFC90919C91EC300349C8F /* AppDelegate.m */,
+			);
+			name = appDelegate;
+			sourceTree = "<group>";
+		};
+		78AFC92F19C91F3B00349C8F /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				78AFC90E19C91EC300349C8F /* ViewController.h */,
+				78AFC90F19C91EC300349C8F /* ViewController.m */,
+			);
+			name = viewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78AFC91019C91EC300349C8F /* ViewController.m in Sources */,
+				78AFC93219C91F6500349C8F /* Singleton.m in Sources */,
 				78AFC90A19C91EC300349C8F /* AppDelegate.m in Sources */,
 				78AFC90619C91EC300349C8F /* main.m in Sources */,
 			);
